@@ -1,0 +1,91 @@
+/** common css start */
+*{
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{ font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    width: 1170px ;
+    height: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+/** common css end */
+.cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.cursorPnt {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: 0.2ms;
+}
+#faqWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.faq {
+    max-width: 500px;
+    border: 1px solid black;
+    margin: 10px 0;
+
+}
+.faq .faqheader {
+    padding: 15px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq .faqheader button{ 
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #a6a5a5;
+}
+.faq .faqbody {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.03ms;
+    
+}
+.faq .faqbody .faqcnt{
+    padding: 15px;
+}
+.faq .active .faqbody{
+    overflow: auto;
+    height: 20px;
+
+
+}
